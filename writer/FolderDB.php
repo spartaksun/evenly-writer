@@ -1,5 +1,7 @@
 <?php
 
+namespace writer;
+
 class FolderDB extends Folder
 {
     public function  newFileName($size)

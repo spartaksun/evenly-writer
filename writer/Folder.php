@@ -1,5 +1,8 @@
 <?php
 
+namespace writer;
+
+
 abstract class Folder
 {
 

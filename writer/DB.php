@@ -1,10 +1,13 @@
 <?php
 
+namespace writer;
+
+
 class DB
 {
     /**
      * @throws WriterException
-     * @return PDO
+     * @return \PDO
      */
     public static function connection()
     {
@@ -12,12 +15,12 @@ class DB
         if (empty($_connection)) {
             try {
                 $dbConfig = ConfigLoader::load('db');
-                $_connection = new PDO(
+                $_connection = new \PDO(
                     'mysql:dbname=' . $dbConfig['name'] . ';host=' . $dbConfig['host'],
                     $dbConfig['user'],
                     $dbConfig['pass']
                 );
-            } catch (PDOException $e) {
+            } catch (\PDOException $e) {
                 throw new WriterException("DB error \n" . $e->getTraceAsString());
             }
         }

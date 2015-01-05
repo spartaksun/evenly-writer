@@ -1,5 +1,8 @@
 <?php
 
+namespace writer;
+
+
 /**
  * Create folder instance
  * Class FolderFactory

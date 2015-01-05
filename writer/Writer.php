@@ -1,5 +1,8 @@
 <?php
 
+namespace writer;
+
+
 class Writer
 {
 
@@ -129,8 +132,4 @@ class Writer
         return ($this->_config['folder_size_max'] - $folder->size()) >= $fileSize;
     }
 
-}
-
-class WriterException extends Exception
-{
 }

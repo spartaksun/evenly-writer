@@ -1,5 +1,8 @@
 <?php
 
+namespace writer;
+
+
 class FolderNoDB extends Folder
 {
 
